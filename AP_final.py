@@ -13,11 +13,11 @@ client_credentials_manager = SpotifyClientCredentials(client_id=client_id, clien
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 def recommend_song(score):
-    if score >= 90:
+    if score >= 90: #Passing Score
         return "The One (Just got my degree)" + "YT"
-    elif 70 <= score < 89:
+    elif 70 <= score < 89: #Normal Score
         return "Congratulations" + "Post Malone"
-    else:
+    else: #Low Score
         return "Bury Me" + "Pinkpantheress"
 
 def search_track(query):
